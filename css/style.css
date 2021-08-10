@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --purple-dark: #5f546e;
+  --purple-light: #827593;
+  --gray-light: #e5e3e8;
+  --gray-light: #a5a2a9;
+  --light: #fcf8fb;
+  --transition: all 150ms cubic-bezier(0.46, 1.13, 0.67, 0.87);
+  --font-family: "Roboto", sans-serif;
+}
+/*
+
+.container .bottom {
+  height: 7px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #aaa4b2;
+}
+
+.colon::after {
+  content: "";
+  width: 100%;
+  height: var(--size);
+  background-color: #9892a3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  color: var(--purple-light);
+  background-color: var(--purple-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15;
+  position: relative;
+} 
+
+.container {
+  width: 560px;
+  height: 320px;
+  display: block;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.215),
+    -5px -5px 25px rgba(0, 0, 0, 0.125);
+  background-color: #e5e3e8;
+  position: relative;
+}
+
+ .clock-container {
+  width: 405px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 50px;
+  background-color: var(--purple-dark);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.825);
+}
+.clock-container span {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+}
+.clock-container p {
+  font-size: 60px;
+  color: var(--light);
+  font-weight: 100;
+}
+
+.colon {
+  --size: 3px;
+  width: var(--size);
+  height: 15px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.colon::before {
+  content: "";
+  width: 100%;
+  height: var(--size);
+  background-color: #9892a3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.container .bottom {
+  height: 7px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #aaa4b2;
+}
+.container .bottom .progress-bar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: #615770;
+  transition: var(--transition);
+}
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--purple-light);
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  line-height: 1.15;
+  position: relative;
+}
+
+.container {
+  width: 560px;
+  height: 320px;
+  background-color: #e5e3e8;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.215),
+    -5px -5px 25px rgba(0, 0, 0, 0.125);
+  display: block;
+  position: relative;
+}
+
+.clock-container {
+  width: 405px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.825);
+  background-color: var(--purple-dark);
+}
+.clock-container span {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  color: #827593;
+}
+.clock-container p {
+  font-size: 60px;
+  color: var(--light);
+  font-weight: 100;
+}
+.colon {
+  width: 3px;
+  height: 3px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.colon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #e5e3e8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.colon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #e5e3e8;
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.container .bottom {
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  bottom: 0;
+  background: #aaa4b2;
+}
+.container .bottom .progress-bar {
+  width: 10%;
+  background-color: var(--purple-dark);
+  height: 7px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  transition: var(--transition);
+}
